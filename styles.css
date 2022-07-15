@@ -385,7 +385,7 @@ height: 25px;
 
 /*--------------📞 Contact page ---------------*/
 .about-header{
-    background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../photos/background.jpg);
+    background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./Photos/background.jpg);
     /* height: 50vh; */
     text-align: center;
     background-size: cover;
