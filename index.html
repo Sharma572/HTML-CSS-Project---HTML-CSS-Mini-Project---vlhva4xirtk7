@@ -12,7 +12,7 @@
 </head>
 <body>
     <section id="header">
-       <nav class="nav">
+       <!-- <nav class="nav">
              <div class="logo"><img src="./Photos/logo.png" alt="Logo"></div>
              <div class="nav-links">
                 <ul class="links">
@@ -22,7 +22,45 @@
                     <li><a href="contact-us.html">Contact</a></li>
                 </ul>
              </div>
-       </nav>
+       </nav> -->
+
+       <!-- Hamburger menu -->
+       <div class="container-ham">
+           <div id="brand" class="logo"><img src="./Photos/logo.png" alt="Logo"></div>
+           <div class="nav-links" id="hide-links">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+         </div>  
+         <span id="menu-open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+       </div>
+  
+       <!-- The overlay -->
+       
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <div class="logo"><img src="./Photos/logo.png" alt="Logo"></div>
+        <div class="nav-links">
+           <ul class="links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about-us.html">About us</a></li>
+               <li><a href="course.html">Course</a></li>
+               <li><a href="contact-us.html">Contact</a></li>
+           </ul>
+        </div>  
+    </div>
+    
+  </div>
+
+
        <div class="text-box">
         <h1>World's Biggest University</h1>
         <p>We're a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we're the nation's oldest Catholic and Jesuit university. Today we're a forward-looking, diverse community devoted to social justice, restless inquiry and respect for each person's individual needs and talents..</p>
@@ -184,7 +222,7 @@
             <a href="www.instagram.com"><img class="social-icon"  src="./Photos/social-img/icons8-instagram.gif"></a>
 
         </div>
-        <h4 class="rights">All Rigths are Reserved By 💛 R.K1999</h4>
+        <h4 class="rights">All Rigths are Reserved By ❤️ R.K1999</h4>
     </section>
     <script src="App.js"></script>
 </body>

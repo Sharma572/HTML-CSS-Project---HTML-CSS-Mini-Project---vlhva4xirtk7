@@ -66,13 +66,15 @@
                 </div>
             </div>
             <div class="cont-col">
-                <input type="text" placeholder="Enter Your Name">
-                <input type="email" placeholder="Enter Your Email">
-                <input type="email" placeholder="Enter Your Email">
-                <textarea name="" id="" cols="" rows="" placeholder="Message"></textarea>
-                <button class="btn btn-explore"><a class="white">Send Message</a></button>
+                <form onsubmit="return validate()">
+                    <input type="text" placeholder="Enter Your Name" id="name">
+                    <input type="email" placeholder="Enter Your Email" id="Email">
+                    <input type="text" placeholder="Enter Your Subject" required>
+                    <textarea name="" id="" cols="" rows="" placeholder="Message"></textarea>
+                    <button class="btn btn-explore"><a class="white">Send Message</a></button>      
+                </form>
             </div>
-         </div>
+            </div>
      </section>
 
      <!-- About us -->
@@ -96,7 +98,7 @@
               <a href="www.instagram.com"><img class="social-icon"  src="./Photos/social-img/icons8-instagram.gif"></a>
   
           </div>
-          <h4 class="rights">All Rigths are Reserved By 💛 R.K1999</h4>
+          <h4 class="rights">All Rigths are Reserved By ❤️ R.K1999</h4>
       </section>
 </body>
 </html>
