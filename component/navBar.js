@@ -1,3 +1,4 @@
+
 /*
 =========== NavBar ===========
 */
@@ -46,3 +47,5 @@ class navSection extends HTMLElement{
 }
 
 customElements.define("nav-section",navSection);
+
+
