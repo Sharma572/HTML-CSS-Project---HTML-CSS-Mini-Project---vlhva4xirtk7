@@ -194,7 +194,7 @@ width: 100%;
 /* brand and links responsive*/
 .container-ham{
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-between ;
     align-items: center;
 }
 
@@ -471,17 +471,17 @@ height: 25px;
 }
 
 
-/*--------------📞 Contact page ---------------*/
-.about-header{
+/*--------  Universal classes for about,contact and courses ----------*/
+.about-header,.contact-us,.couses{
     background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./Photos/background.jpg);
-    /* height: 50vh; */
+    height: 50vh;
     text-align: center;
     background-size: cover;
     background-position: center;
     width: 100%;
     color: white;
 }
-.about-h{
+.uni-heading{
     font-size: 50px;
     margin: 5% auto;
 }

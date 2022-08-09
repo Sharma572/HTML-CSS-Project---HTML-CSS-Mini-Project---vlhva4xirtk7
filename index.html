@@ -9,58 +9,17 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="/component/navBar.js" defer></script>
+    <script type="module" src="/component/courses.js" defer></script>
+    <script type="module" src="/component/campus.js" defer></script>
+    <script type="module" src="/component/facility.js" defer></script>
+    <script type="module" src="/component/footer.js" defer></script>
 </head>
 <body>
-    <section id="header">
-       <!-- <nav class="nav">
-             <div class="logo"><img src="./Photos/logo.png" alt="Logo"></div>
-             <div class="nav-links">
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About us</a></li>
-                    <li><a href="course.html">Course</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
-                </ul>
-             </div>
-       </nav> -->
-
-       <!-- Hamburger menu -->
-       <div class="container-ham">
-           <div id="brand" class="logo"><img src="./Photos/logo.png" alt="Logo"></div>
-           <div class="nav-links" id="hide-links">
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About us</a></li>
-                <li><a href="course.html">Course</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
-            </ul>
-         </div>  
-         <span id="menu-open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-       </div>
-  
-       <!-- The overlay -->
-       
-<div id="myNav" class="overlay">
-
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-    <!-- Overlay content -->
-    <div class="overlay-content">
-        <div class="logo"><img src="./Photos/logo.png" alt="Logo"></div>
-        <div class="nav-links">
-           <ul class="links">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="about-us.html">About us</a></li>
-               <li><a href="course.html">Course</a></li>
-               <li><a href="contact-us.html">Contact</a></li>
-           </ul>
-        </div>  
-    </div>
     
-  </div>
-
-
+    
+    <section id="header">
+        <nav-section></nav-section>
        <div class="text-box">
         <h1>World's Biggest University</h1>
         <p>We're a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we're the nation's oldest Catholic and Jesuit university. Today we're a forward-looking, diverse community devoted to social justice, restless inquiry and respect for each person's individual needs and talents..</p>
@@ -69,90 +28,15 @@
     </section>
     
     <!-- Courses -->
-    <section class="course">
-       <h2>Courses we offer</h2>
-       <p>Explore the intersection of technology and society. Learn about environmental justice. Take the famous Problem of God course. Our innovative courses inspire and invite you to help solve some of today's most pressing local, national and global issues.</p>
-       <!-- course-Card -->
-       <div class="course-card grid-col-3">
-        <div class="card">
-            <h3>Graduate Programs</h3>
-            <p>Building on our strong roots in leadership, health care and education, Eduford is proud to offer an array of coed graduate programs for women and men who are ready to advance their careers and grow as leaders. The Eduford College Community Psychology Master's program will help you to meet your goals of becoming a Licensed Professional Counselor.</p>
-        </div>
-        <div class="card">
-            <h3>Undergraduate Programs</h3>
-            <p>For decades, Eduford College has improved the health of our communities, one graduate at a time. The JoAnn McGrath School of Nursing and Health Professions, as one of the largest nursing schools in Wisconsin, offers a wide array of fully accredited nursing programs, guaranteed clinical placements and a technology-rich Center for Clinical Education.</p>
-        </div>
-        <div class="card">
-            <h3>Post graduate Programs</h3>
-            <p>The Eduford, as one of the largest nursing schools in Wisconsin, offers a wide array of fully accredited nursing programs, guaranteed clinical placements and a technology-rich Center for Clinical Education. The Eduford College Community Psychology Master's program will help you to meet your goals of becoming a Licensed Professional Counselor.</p>
-        </div>
-       </div>
-    </section>
+    <course-section></course-section>
+    
     <!-- Campus -->
-    <section class="campus">
-        <h2>Our Global Campus</h2>
-        <p>The University of Hartford's main campus is located on Bloomfield Avenue. Surrounded by green space, the main campus is divided into residential and academic buildings connected by a bridge that overlooks the north branch of the Park River, known to us as Hog River.</p>
-        <!-- campus-Card -->
-        <div class="campus-card grid-col-3">
-            <div class="img camcard1">
-                <img src="./Photos/london.png" alt="nt" >
-                <div class="layer">
-                    <h3>LONDON</h3>
-                </div>
-            </div>
-            <div class="img camcard2" >
-                <img src="./Photos/newyork.png" alt="">
-                <div class="layer">
-                    <h3>NEWYORK</h3>
-                </div>
-            </div>
-            <div class="img camcard3">
-                <img src="./Photos/washington.png" alt="">
-                <div class="layer">
-                    <h3>JAPAN</h3>
-                </div>
-            </div>
-        </div>
-     </section>
+    <campus-section></campus-section>
+    
 
      <!-- Facility -->
-     <section class="facility">
-       <h2>Our Facilities</h2>
-       <p>We commit to meet the financial need of every admitted undergraduate student. We don't consider your ability to pay when we review your application, and we don't base our decision on whether you can cover the cost. If you're accepted here, you belong here.</p>
-       <div class="facility-card-container grid-col-3">
-        <div class="facility-card">
-            <figure>
-                <img src="./Photos/library.png">
-                <figcaption>
-                    <h3>World Class Library</h3>
-            <p>Pursue research at Eduford's libraries, which include more than 3.5 million holdings. Whether your focus is on a specific discipline, interdisciplinary areas or emerging fields, our libraries offer academic resources, a maker hub, collaborative spaces and more.</p>
-                </figcaption>
-              </figure>
-        
-        </div>
-        <div class="facility-card ">
-            <figure>
-                <img src="./Photos/basketball.png">
-                <figcaption>
-                    <h3>Largest Play Ground </h3>
-                    <p>The College introduces students to philosophy and theology and challenges them to delve deeply into the arts, humanities, languages, social sciences and sciences.</p>
-                </figcaption>
-              </figure>
-        </div>
-        
-        
-        <div class="facility-card ">
-            <figure>
-                <img src="./Photos/cafeteria.png">
-                <figcaption>
-                    <h3>Tasty and Healthy Food.</h3>
-                <p> Whether students pursue studies in Arabic, chemistry, government or one of hundreds of other opportunities, they are part of a rich legacy of academic excellence designed to serve them well in an ever-changing world.</p>
-                </figcaption>
-              </figure>
-        </div>
-        
-       </div>
-     </section>
+     <facility-section></facility-section>
+     
 
      <!-- Testmonial -->
      <section class="testmonial">
@@ -194,36 +78,10 @@
     </section>
 
     <!-- contact -->
-    <section class="contact">
-      <div class="text-box">
-        <h1>Enroll For Our Various Online Courses
-          <br>  Anywhere from the World</h1>
-            <button class="btn"><a class="white"> Visit us to know more</a></button>
-      </div>
-    </section>
 
-    <!-- About us -->
-    <section class="about">
-        <h2>About Us</h2>
-        <p>We're a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we're the nation's oldest Catholic and Jesuit university.
-            We're a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p>
-        
-            <h2>Contact Me</h2>
-            <div class="social-icons">
-            
-            <a href="https://www.linkedin.com/in/raunak-sharma-72202822b"><img class="social-icon" src="./Photos/social-img/icons8-linkedin-2.gif" alt=""></a>
-            
-            <a href="https://github.com/Sharma572"><img class="social-icon"  src="./Photos/social-img/icons8-github.gif" alt=""></a>
-            
-            <a href="www.facebook.com"><img class="social-icon" src="./Photos/social-img/icons8-facebook-64.png" alt=""></a>
-
-            <a href="www.gmail.com"><img class="social-icon" class="social-icon"  src="./Photos/social-img/icons8-gmail-48.png"alt=""></a>
-
-            <a href="www.instagram.com"><img class="social-icon"  src="./Photos/social-img/icons8-instagram.gif"></a>
-
-        </div>
-        <h4 class="rights">All Rigths are Reserved By ❤️ R.K1999</h4>
-    </section>
+    <footer-section></footer-section>
+   
     <script src="App.js"></script>
+  
 </body>
 </html>
